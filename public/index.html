@@ -7,6 +7,30 @@
     <title>Custom Video Player</title>
   </head>
   <body>
+    <video
+      src="../src/videos/gone.mp4"
+      id="video"
+      class="screen"
+      poster="../src//img/poster.png"
+    ></video>
+    <div class="controls">
+      <button class="btn" id="play">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+      <button id="stop" class="btn">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
     <script src="../src/index.js"></script>
   </body>
 </html>
